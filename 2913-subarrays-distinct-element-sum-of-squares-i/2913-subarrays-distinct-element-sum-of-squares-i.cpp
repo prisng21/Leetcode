@@ -47,12 +47,12 @@ public:
             st.insert(nums[k]);
         }
 
-        ans += st.size() * st.size();
+        ans +=   st.size() * st.size();
 
         totalsum(nums, i, j + 1);
     }
 
-    int sumCounts(vector<int>& nums) {
+    int sumCounts(vector<int>& nums){
         ans = 0;
         totalsum(nums, 0, 0);
         return ans;
