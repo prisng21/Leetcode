@@ -14,7 +14,7 @@ public:
             else if(s[i] == ')'){
                    if(cnt>0){
                     if(s[i+1]==')'){
-                        cnt--;
+                        cnt--;             // remove
                         i=i+2;
                     }
                     else{
